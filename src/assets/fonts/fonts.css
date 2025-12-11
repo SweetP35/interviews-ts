@@ -1,0 +1,44 @@
+/* Medium */
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('../fonts/NetflixSans-Md.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('../fonts/NetflixSans-Bd.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('../fonts/NetflixSans-Lt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Thin */
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('../fonts/NetflixSans-Th.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic (пример для Regular Italic) */
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('../fonts/NetflixSans-It.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

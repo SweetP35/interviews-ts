@@ -68,7 +68,7 @@
 				type="submit"
 				@click="addNewInterview"
 			>
-				<LouderBtn v-if="loading"/>
+				<LoaderBtn v-if="loading"/>
 				<p>Создать собеседование</p>
 			</button>
 		</div>
@@ -81,7 +81,7 @@
 	import { v4 as uuidv4 } from 'uuid'
 	import { getFirestore, setDoc, doc } from 'firebase/firestore'
 	import type { IInterview, IInterviewForm } from '@/interfaces'
-	import LouderBtn from '@/components/LouderBtn.vue'
+	import LoaderBtn from '@/components/LoaderBtn.vue'
 	import { useUserStore } from '@/stores/user'
 	import { formatPhone } from '../directives/phone'
 	const userStore = useUserStore()

@@ -36,7 +36,7 @@
 						<path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/>
 					</g>
 				</svg>
-				<LouderBtn v-if="isLoading"/>
+				<LoaderBtn v-if="isLoading"/>
 				<p>{{ submitButtonText }}</p>
 			</button>
 		</form>
@@ -49,7 +49,7 @@
 	import { computed, ref } from 'vue'
 	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
 	import { useRouter } from 'vue-router'
-	import LouderBtn from '@/components/LouderBtn.vue'
+	import LoaderBtn from '@/components/LoaderBtn.vue'
 	import ErrorAlert from '@/components/ErrorAlert.vue'
 	const router = useRouter()
 	const isLogin = ref<boolean>(true)

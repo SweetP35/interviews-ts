@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 	defineEmits<{
-		cancel: () => void
-		delete: () => void
+		cancel: []
+		delete: []
 	}>()
 </script>

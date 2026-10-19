@@ -1,48 +1,33 @@
-# interviews
+Interview Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
+Приложение для учёта собеседований: компании, контакты HR, этапы отбора, зарплатная вилка и итог. Статистика по офферам и отказам выводится в виде диаграммы.
 
-## Recommended IDE Setup
+🔗 Демо: [[ссылка]](https://interviews-tracker.netlify.app/)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![Скриншот](./screenshot.png)
 
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+Стек
+Vue 3 (Composition API, <script setup>) + TypeScript
+Pinia — хранение данных пользователя
+Vue Router — маршрутизация с защитой страниц (navigation guards)
+Firebase Authentication — регистрация и вход по email
+Cloud Firestore — хранение собеседований, у каждого пользователя своя коллекция
+Chart.js / vue-chartjs — диаграмма статистики
+Vite, ESLint, Prettier
+Возможности
+Регистрация и авторизация; неавторизованный пользователь не попадает на закрытые страницы
+Добавление собеседования: компания, ссылка на вакансию, имя HR, Telegram / WhatsApp / телефон
+Карточка собеседования: этапы с датами и комментариями, зарплатная вилка, итог (оффер / отказ)
+Список всех собеседований с удалением и подтверждением действия
+Статистика: доля офферов, отказов и собеседований в процессе
+Собственные директивы: маска телефона (v-phone) и всплывающие подсказки (v-tooltip)
+Типизация данных через интерфейсы TypeScript
+Запуск
+bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
+Сборка с проверкой типов:
 
-```sh
+bash
 npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
